@@ -9,14 +9,13 @@
 ### 🙋‍♂️ Sobre Mí
 - 📍 Vivo en Ecuador.
 - 💡 Interesado en Backend, Software Development y Software Desing
-- 🌐 Visita mi sitio web personal: **[[Tu Sitio Web](https://github.com/josegavinov)]**
+- 🌐 Visita mi sitio web personal: **[[MI PERFIL WEB](https://github.com/josegavinov)]**
 
 ### 🚀 Mis Proyectos
 | Proyecto | Descripción | Tecnologías |
 |---|---|---|
-| **[Proyecto 1]** | Una breve descripción de lo que hace tu proyecto. | `JavaScript` `React` `Node.js` |
-| **[Proyecto 2]** | Una breve descripción de lo que hace tu proyecto. | `Python` `Django` `PostgreSQL` |
-| **[Proyecto 3]** | Una breve descripción de lo que hace tu proyecto. | `HTML5` `CSS3` `Firebase` |
+|[ **[Aso-Carnets]**](https://github.com/josegavinov/aso-carnets.git) | Carnets virtuales a jovenes deportistas, remplazando el uso de su documento personal. | `JavaScript` `MySQL` `Node.js` |
+
 
 ### 🛠️ Mis Herramientas y Tecnologías
 
