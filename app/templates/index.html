@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Bienvenido a mi portafolio</h1>
+<p><strong>Profesion:</strong> Ingeniero en Computación</p>
+<h2>Mis Habilidades Tecnológicas:</h2>
+<ul>
+    {% for tech in usuario.habilidades %}
+    <li>{{ tech }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

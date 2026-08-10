@@ -1,0 +1,23 @@
+# Entornos virtuales de Python
+venv/
+env/
+ENV/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de sistema macOS
+.DS_Store
+
+# Base de datos SQLite local (si existiera)
+*.db
+*.sqlite3
+
+# Variables de entorno privadas
+.env
+
+# Archivos del editor / IDE
+.vscode/
+.idea/

@@ -1,0 +1,35 @@
+version: '3.8'
+
+services: 
+  web:
+    build: .
+    container_name: portafolio-web
+    ports:
+      - "8080:5000"
+    volumes:
+      - ./:/app
+    environment:
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+      - DATABASE_URL=postgresql://postgres:postgres123@db:5432/portafolio_db
+    
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    container_name: portafolio-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_DB: portafolio_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+
+    
