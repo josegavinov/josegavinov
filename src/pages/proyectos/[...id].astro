@@ -1,11 +1,12 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { render } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 import Base from '../../layouts/Base.astro';
 import { ruta } from '../../utils/rutas';
+import { obtenerProyectos } from '../../utils/proyectos';
 
 export const getStaticPaths = (async () => {
-	const proyectos = await getCollection('proyectos');
+	const proyectos = await obtenerProyectos();
 	return proyectos.map((proyecto) => ({
 		params: { id: proyecto.id },
 		props: { proyecto },

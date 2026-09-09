@@ -1,14 +1,12 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import TarjetaProyecto from '../components/TarjetaProyecto.astro';
 import { perfil } from '../data/perfil';
 import { ruta } from '../utils/rutas';
+import { obtenerProyectos } from '../utils/proyectos';
 
-const proyectos = await getCollection('proyectos');
-const destacados = proyectos
-	.filter((proyecto) => proyecto.data.destacado)
-	.sort((a, b) => a.data.orden - b.data.orden);
+const proyectos = await obtenerProyectos();
+const destacados = proyectos.filter((proyecto) => proyecto.data.destacado);
 ---
 
 <Base titulo={perfil.nombre}>
