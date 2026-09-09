@@ -1,22 +1,16 @@
-# Entornos virtuales de Python
-venv/
-env/
-ENV/
+# Dependencias
+node_modules/
 
-# Caché de Python
-__pycache__/
-*.py[cod]
-*$py.class
+# Salida del build
+dist/
+.astro/
 
 # Archivos de sistema macOS
 .DS_Store
 
-# Base de datos SQLite local (si existiera)
-*.db
-*.sqlite3
-
 # Variables de entorno privadas
 .env
+.env.production
 
 # Archivos del editor / IDE
 .vscode/
